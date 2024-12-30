@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="antialiased bg-gray-100 font-Roboto">
+  <!-- Header starts from here -->
+  <header class="bg-white divide-y ml-18 border-b">
+    <div class="flex items-center justify-between mx-4 h-14">
+      <div class="-ml-2">
+        <img class="w-20 h-12" src="images/yt-logo.png" alt="youtube-logo">
+      </div>
+
+      <div class="flex items-center justify-center flex-grow">
+        <input type="text" placeholder="Search"
+          class="w-3/5 h-8 px-1 py-2 border border-gray-400 focus:outline-none focus:border-blue-600">
+        <button
+          class="flex items-center justify-center w-16 h-8 bg-gray-200 border-l-0 border-slate-500 hover:bg-gray-300">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="flex items-center justify-center space-x-4">
+        <button class="flex items-center justify-center">
+          <i class="fa-solid fa-video"></i>
+        </button>
+        <button class="flex items-center justify-center">
+          <i class="fa-solid fa-border-none"></i>
+        </button>
+        <button class="flex items-center justify-center">
+          <i class="fa-regular fa-bell"></i>
+        </button>
+        <button class="flex items-center justify-center">
+          <div class="w-8 h-8 bg-blue-400 rounded-full">
+            <img class="rounded-full"
+              src="https://yt3.ggpht.com/FHj1IYeXlDVCmf_NBCE0bPwhtFLw8060DwlsDEsUvFzZJVqiX4ohljwJeyFESMml5pfIQBSX=s88-c-k-c0x00ffffff-no-rj"
+              alt="">
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="flex items-center px-4 py-3 cursor-pointer space-x-11">
+      <i class="fa-solid fa-chevron-left"></i>
+      <span class="px-2 py-1 text-sm text-gray-200 bg-gray-700 border border-gray-800 rounded-full shadow-inset">All
+        Recommendations</span>
+
+      <span
+        class="px-2 py-1 text-sm text-gray-800 bg-gray-200 border border-gray-300 rounded-full shadow-inset">TailwindCSS</span>
+
+      <span
+        class="px-2 py-1 text-sm text-gray-800 bg-gray-200 border border-gray-300 rounded-full shadow-inset">JavaScript</span>
+
+      <span
+        class="px-2 py-1 text-sm text-gray-800 bg-gray-200 border border-gray-300 rounded-full shadow-inset">Git</span>
+
+      <span
+        class="px-2 py-1 text-sm text-gray-800 bg-gray-200 border border-gray-300 rounded-full shadow-inset">Information
+        techology</span>
+
+      <span
+        class="px-2 py-1 text-sm text-gray-800 bg-gray-200 border border-gray-300 rounded-full shadow-inset">Java</span>
+
+      <span
+        class="px-2 py-1 text-sm text-gray-800 bg-gray-200 border border-gray-300 rounded-full shadow-inset">Cricket</span>
+
+      <span
+        class="px-2 py-1 text-sm text-gray-800 bg-gray-200 border border-gray-300 rounded-full shadow-inset">Mixes</span>
+
+      <span class="px-2 py-1 text-sm text-gray-800 bg-gray-200 border border-gray-300 rounded-full shadow-inset">Tamil
+        Cinema</span>
+
+      <span
+        class="px-2 py-1 text-sm text-gray-800 bg-gray-200 border border-gray-300 rounded-full shadow-inset">Live</span>
+      <i class="fa-solid fa-chevron-right"></i>
+    </div>
+  </header>
+  <!-- Header ends  here -->
+
+  <!-- Sidebar starts from here -->
+  <aside class="fixed top-0 flex flex-col items-center w-20 pt-4 text-gray-700 bg-white h-sceen">
+    <button class="text-xl ">
+      <i class="fa-solid fa-bars"></i></button>
+
+    <div class="mt-8 ">
+      <button class="flex flex-col items-center justify-center w-full py-4 text-xl hover:bg-gray-100">
+        <i class="text-[red] fa-solid fa-house hover:text-red-500 "></i>
+        <span class="mt-1 text-[0.9rem] font-bold ">Home</span>
+      </button>
+
+      <button class="flex flex-col items-center justify-center w-full py-4 text-xl hover:bg-gray-100">
+        <i class="fa-solid fa-fire"></i>
+        <span class="mt-1 text-[0.9rem] font-bold ">Trending</span>
+      </button>
+
+      <button class="flex flex-col items-center justify-center w-full py-4 text-xl hover:bg-gray-100">
+        <i class="fa-solid fa-ticket"></i>
+        <span class="mt-1 text-[0.9rem] font-bold ">Subscription</span>
+      </button>
+
+      <button class="flex flex-col items-center justify-center w-full py-4 text-xl hover:bg-gray-100">
+        <i class="fa-solid fa-book"></i>
+        <span class="mt-1 text-[0.9rem] font-bold ">Library</span>
+      </button>
+    </div>
+  </aside>
+  <!-- Sidebar ends from here -->
+
+  <!-- Main section starts from here -->
+  <main class="ml-24 pt-8  ">
+    <div class="border-b-4 border-gray-500 pb-12">
+      <h3 class="text-xl font-bold">Recommended</h3>
+      <div class="mt-4 grid grid-cols-3 gap-y-6">
+
+        <!-- YouTube Video one -->
+        <div class="w-68 rounded-md">
+          <div class="h-[250px] w-[400px] bg-gray-700 rounded-lg">
+            <iframe class="rounded-lg" width="400" height="250"
+              src="https://www.youtube.com/embed/mXZb9NytbmI?si=8y0OOC6jhIFnU6HD" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="flex mt-2">
+            <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0">
+              <img class="rounded-full"
+                src="https://yt3.googleusercontent.com/ytc/AIdro_kX3sdbuu3KFmRPsmlu0R5Rx_BhpxwupjtvJmkEdNfla7w=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+            <div class="ml-2">
+              <div class="font-bold text-sm">This Happened in 2024...</div>
+
+              <div class="text-xs text-gray-600 ">
+                <p>CodeWithHarry</p>
+                <p>9 hours ago &middot; 30k views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- YouTube Video two -->
+        <div class="w-68 rounded-md">
+          <div class="h-[250px] w-[400px] bg-gray-700 rounded-lg">
+            <iframe class="rounded-lg" width="400" height="250"
+              src="https://www.youtube.com/embed/_59Jz6sQ2U4?si=_ydD_rHzjkt6ME1f" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="flex mt-2">
+            <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0">
+              <img class="rounded-full"
+                src="https://yt3.googleusercontent.com/G42b4i9auAhu-cy3wi9IhLxmkfl2i_iokiVgHx32xsZ8I4ok6uzamWXUj16xzJmAGoq8fRfS1Q=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+            <div class="ml-2">
+              <div class="font-bold text-sm  w-[340px]">Web Development Roadmap 2025 with GenAI</div>
+
+              <div class="text-xs text-gray-600 ">
+                <p>RoadsideCoder</p>
+                <p>24 hours ago &middot; 30k views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Video three -->
+        <div class="w-68 rounded-md">
+          <div class="h-[250px] w-[400px] bg-gray-700 rounded-lg">
+            <iframe class="rounded-lg" width="400" height="250"
+              src="https://www.youtube.com/embed/l2AMaPCsJIQ?si=zMPEeoliRpYoaWWo" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="flex mt-2">
+            <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0">
+              <img class="rounded-full"
+                src="https://yt3.googleusercontent.com/_P1JQ8TJ3YKBgX_1iL6QTBwY0AER5CfJo4lza9ETeKCFdierATpEvAPYv4mKVpAxSy-Xc8GvhkY=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+            <div class="ml-2">
+              <div class="font-bold text-sm  w-[340px]">SIKANDAR: Official Teaser | Salman Khan | Sajid Nadiadwala |
+                A.R. Murugadoss | EID 2025</div>
+
+              <div class="text-xs text-gray-600 ">
+                <p>Nadiadwala Grandson</p>
+                <p>3 hours ago &middot; 51M views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- YouTube Video four -->
+        <div class="w-68 rounded-md">
+          <div class="h-[250px] w-[400px] bg-gray-700 rounded-lg">
+            <iframe class="rounded-lg" width="400" height="250"
+              src="https://www.youtube.com/embed/Z7VSgQ_y0dg?si=1JruxB9ZZQtFlW6Z" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="flex mt-2">
+            <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0">
+              <img class="rounded-full"
+                src="https://yt3.googleusercontent.com/r5RS47fkYuPkjajACQyu1mb5j20WIX3VG5qSAzerzaYiD7f6O46GqtH8IZuBbfrjY4fSfj6CkA=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+            <div class="ml-2">
+              <div class="font-bold text-sm  w-[340px]">Learn useContext Hook in depth</div>
+
+              <div class="text-xs text-gray-600 ">
+                <p>CodeHelp - by Babbar</p>
+                <p>3 months ago &middot; 22k views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Video five -->
+        <div class="w-68 rounded-md">
+          <div class="h-[250px] w-[400px] bg-gray-700 rounded-lg">
+            <iframe class="rounded-lg" width="400" height="250"
+              src="https://www.youtube.com/embed/pU3VJ_EV9K4?si=dsrfxH0woyka7j4d" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="flex mt-2">
+            <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0">
+              <img class="rounded-full"
+                src="https://yt3.googleusercontent.com/Vbihf6I3qpDU-z9t-OzXj8zraayJl02IhLu9julAUOfar6Y2I9zi0GambaWkCDOlaIFSk6cw6dI=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+            <div class="ml-2">
+              <div class="font-bold text-sm  w-[340px]">Sunday QnA with Procodrrs </div>
+
+              <div class="text-xs text-gray-600 ">
+                <p>Anurag Singh Procodrrs</p>
+                <p>29 Dec 2024 &middot; 12k views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Video six -->
+        <div class="w-68 rounded-md">
+          <div class="h-[250px] w-[400px] bg-gray-700 rounded-lg">
+            <iframe class="rounded-lg" width="400" height="250"
+              src="https://www.youtube.com/embed/IOt3kQP93SY?si=S8GdA03TAXKSZAU_" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="flex mt-2">
+            <div class="h-10 w-10 bg-blue-300 rounded-full flex-shrink-0">
+              <img class="rounded-full"
+                src="https://yt3.googleusercontent.com/00yIYVKjmFvR7sFZXmP5aMq1u0P7ZcLfnDW27A7zRD1hTqcWLwYn0-o_5rGkK2eKfCf43ueE7Q=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+            <div class="ml-2">
+              <div class="font-bold text-sm  w-[340px]">How this student got double Internship offers at Microsoft & JP
+                Morgan - Interview lessons</div>
+
+              <div class="text-xs text-gray-600 ">
+                <p>Apna College</p>
+                <p>3 day ago &middot; 108k views</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- YouTube Posts section starts from here -->
+    <div class="my-4">
+      <h3 class="text-xl font-bold">Latest YouTube posts</h3>
+      <div class="mt-2 grid grid-cols-3">
+
+        <!-- POST-1 -->
+        <div class="w-[27rem] h-[200px] bg-white flex flex-col px-3 py-1 border border-gray-400 rounded-sm">
+          <div class="flex items-center">
+            <div class="w-6 h-6 bg-blue-300 rounded-full">
+              <img class="rounded-full"
+                src="https://yt3.googleusercontent.com/J__eySTERvaxzNlb0jHMKNtFIKzHdGkzGb2hcrq4hDgwphLXHwPWdmLLU-3Q1cTZGzfx621wpw=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+            <div class="text-sm text-gray-600 ml-2 ">
+              <p>Vishal K Entertainment &middot; 6 hours ago</p>
+            </div>
+          </div>
+          <div class="flex mt-3">
+            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet
+              consectetur.</p>
+            <div class="w-32 h-[120px] bg-gray-600 flex-shrink-0">
+              <img
+                src="https://yt3.googleusercontent.com/J__eySTERvaxzNlb0jHMKNtFIKzHdGkzGb2hcrq4hDgwphLXHwPWdmLLU-3Q1cTZGzfx621wpw=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+          </div>
+          <div class="flex items-center justify-between text-sm text-gray-600">
+            <div class="flex space-x-5 items-center ">
+              <button><i class="fa-regular fa-thumbs-up text-gray-500 text-xl mr-1"></i>179</button>
+              <button class="mt-2"><i class="fa-solid fa-thumbs-down text-gray-400 text-xl ml-2"></i></button>
+            </div>
+
+            <div class="flex items-start mt-4">
+              <button><i class="fa-solid fa-comment"></i></button>
+              <div class="ml-1">24</div>
+              <button class="ml-5"><i class="fa-solid fa-list mr-2"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- POST-2 -->
+        <div class="w-[27rem] h-[200px] bg-white flex flex-col px-3 py-1 border border-gray-400 rounded-sm">
+          <div class="flex items-center ">
+            <div class="w-6 h-6 bg-blue-300 rounded-full">
+              <img class="rounded-full"
+                src="https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+            <div class="text-sm text-gray-600 ml-2 ">
+              <p>Chai our code &middot; 12 hours ago</p>
+            </div>
+          </div>
+          <div class="flex mt-3">
+            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Molestias excepturi iste ipsa est dolor optio.</p>
+            <div class="w-32 h-[120px] bg-gray-600 flex-shrink-0">
+              <img
+                src="https://yt3.googleusercontent.com/1FEdfq3XpKE9UrkT4eOc5wLF2Bz-42sskTi0RkK4nPh4WqCbVmmrDZ5SVEV3WyvPdkfR8sw2=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+          </div>
+          <div class="flex items-center justify-between text-sm text-gray-600">
+            <div class="flex space-x-5 items-center">
+              <button><i class="fa-regular fa-thumbs-up text-gray-500 text-xl mr-1"></i>179</button>
+              <button class="mt-2"><i class="fa-solid fa-thumbs-down text-gray-400 text-xl ml-2"></i></button>
+            </div>
+
+            <div class="flex items-start mt-4">
+              <button><i class="fa-solid fa-comment"></i></button>
+              <div class="ml-1">24</div>
+              <button class="ml-5"><i class="fa-solid fa-list mr-2"></i></button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- POST-3 -->
+        <div class="w-[27rem] h-[200px] bg-white flex flex-col px-3 py-1 border border-gray-400 rounded-sm">
+          <div class="flex items-center">
+            <div class="w-6 h-6 bg-blue-300 rounded-full">
+              <img class=" rounded-full"
+                src="https://yt3.googleusercontent.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+            <div class="text-sm text-gray-600 ml-2 ">
+              <p>Lorem, ipsum dolor &middot; 3 day ago</p>
+            </div>
+          </div>
+          <div class="flex mt-3">
+            <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Harum, repellat.</p>
+            <div class="w-32 h-[120px] bg-gray-600 flex-shrink-0">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AIdro_lGRc-05M2OoE1ejQdxeFhyP7OkJg9h4Y-7CK_5je3QqFI=s160-c-k-c0x00ffffff-no-rj"
+                alt="">
+            </div>
+          </div>
+          <div class="flex items-center justify-between text-sm text-gray-600">
+            <div class="flex space-x-5 items-center">
+              <button><i class="fa-regular fa-thumbs-up text-gray-500 text-xl mr-1"></i>179</button>
+              <button class="mt-2"><i class="fa-solid fa-thumbs-down text-gray-400 text-xl ml-2"></i></button>
+            </div>
+
+            <div class="flex items-start mt-4">
+              <button><i class="fa-solid fa-comment"></i></button>
+              <div class="ml-1">24</div>
+              <button class="ml-5"><i class="fa-solid fa-list mr-2"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- YouTube Posts section ends here -->
+
+  </main>
+  <!-- Main section ends from here -->
+
+</body>
+</html>
+
